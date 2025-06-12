@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kick Protein Drink</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#ffffff, #f2f2f2);
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #111;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      background: #1e1e1e;
+      color: white;
+      padding: 80px 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .cta-button {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    .hero-image img {
+      width: 80px;
+      animation: spinY 4s linear infinite;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes spinY {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    /* Why Choose Section */
+    .benefits-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+    }
+
+    .benefits-container img {
+      max-width: 300px;
+      margin-right: 40px;
+      border-radius: 15px;
+    }
+
+    .benefits {
+      max-width: 500px;
+    }
+
+    .benefits h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .benefits li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    /* Ingredients */
+    .ingredients {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .ingredients h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    /* Drink Gallery Slider */
+    .drink-gallery {
+      background: #f9f9f9;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .drink-gallery h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 250px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .swiper-slide img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">KICK</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Benefits</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="https://assets.pebblely.com/tmp/d68820a5-c79d-415a-8ec6-a5d2e11f52c4.jpg" alt="Kick Can" />
+    </div>
+    <div class="hero-text">
+      <h1>Fuel Your Body</h1>
+      <p>Kick Protein Drink – Packed with 25g of pure power to energize your day.</p>
+      <button class="cta-button">Order Now</button>
+    </div>
+  </section>
+
+  <!-- Why Choose Kick + Ingredients Image -->
+  <section class="benefits-container">
+    <img src="https://assets.pebblely.com/220b01b4-685d-43f5-855d-3ebbfb5db03e/73533b84-91ce-4e45-82c9-d4a149bb8b06.png?height=320&width=320"
+    alt="Kick Bottle" />
+    <div class="benefits">
+      <h2>Why Choose Kick?</h2>
+      <ul>
+        <li>💪 25g high-quality protein per can</li>
+        <li>🌿 Clean, natural ingredients</li>
+        <li>⚡ Fast muscle recovery & energy boost</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- What's Inside -->
+  <section class="ingredients">
+    <h2>What's Inside?</h2>
+    <p>Whey Protein, BCAAs, Cocoa, Natural Flavors, Electrolytes</p>
+  </section>
+
+  <!-- Image Slider -->
+  <section class="drink-gallery">
+    <h2>Our Drink Gallery</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://assets.pebblely.com/tmp/d68820a5-c79d-415a-8ec6-a5d2e11f52c4.jpg" alt="Drink 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://assets.pebblely.com/tmp/b42b1645-d7bb-4964-8398-923c917891bf.jpg?height=320&width=320" alt="Drink 2"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://assets.pebblely.com/tmp/1b613312-03cc-4a4c-abaf-17279570f1ec.jpg?height=320&width=320" alt="Drink 3"/>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+      <!-- Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kick Protein Drink. All rights reserved.</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 20,
+      slidesPerView: 1,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
